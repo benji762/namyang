@@ -49,10 +49,14 @@ new Swiper('.s4_slider', {
 	},
 	breakpoints: {
 		// when window width is >= 320px
-		320: {
+		400: {
 		  slidesPerView: 1,
 		  spaceBetween: 20
 		},
+		700: {
+			slidesPerView: 2,
+			spaceBetween: 20
+		  },
 		// when window width is >= 480px
 		1024: {
 		  slidesPerView: 3,
