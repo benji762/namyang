@@ -22,6 +22,12 @@ new Swiper('.s2_slider', {
 		// when window width is >= 600px
 		600: {
 		  slidesPerView: 1,
+		  scrollbar : {
+			el : '.swiper-scrollbar',
+			draggable: true,
+			dragSize:100 
+		},
+		//   freeMode: false,
 		},
 		// when window width is >= 1600px
 		1200: {

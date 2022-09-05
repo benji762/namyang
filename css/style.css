@@ -146,6 +146,7 @@ h2 > b{
 }
 #header.whitecolor:hover .logo{
     background: url(../images/logo_bk.png) no-repeat;
+    background-size: cover;
 }
 
 
@@ -231,7 +232,7 @@ h2 > b{
 }
 .search_from{
     justify-content: space-between;
-    width: 90%;
+    width: calc(100% - 80px);
 }
 .btn_search_in_fir .btn_search{
     margin-left: auto;
@@ -551,6 +552,13 @@ h2 > b{
 #main_slide{width: 100%; height: 100vh; overflow: hidden;}
 #main_slide .slide{width: 100%; height:100vh; position: relative;}
 #main_slide .slide img{ width: 100%; height:100vh; object-fit: cover;}
+.main_slide_3{
+    background: url(../images/main3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
 #main_slide .bg_black::after{
     content: '';
     background-color: rgba(0,0,0,0.4);
@@ -1200,6 +1208,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     .nav{
         display: none;
     }
+    .btn_wrap .btn_search_in{
+        width: 100%;
+    }
     .s3_tit{
         margin-bottom: 50px;
     }
@@ -1257,5 +1268,58 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     }
     #footer .ft_link_wrap a:nth-child(1), #footer .ft_link_wrap a:nth-child(2){
         margin-bottom: 30px;
+    }
+@media all and (max-width:768px){
+    b{
+        display: inline;
+    }
+    #header{
+        padding: 0 10px;
+    }
+    .inner{
+        padding: 0 10px;
+    }
+    .popup{
+        display:none;
+    }
+    #header{
+        height: 60px;
+    }
+    #header .logo{
+        width: 36px;
+        height: 25px;
+    }
+    #header.whitecolor .logo{
+        width: 36px;
+        height: 25px;
+        background-size: cover;
+    }
+    .btn_search img, .btn_language img{
+        width: 20px;
+        height: 20px;
+    }
+    .btn_nav{
+        width: 18px;
+        height: 14px;
+    }
+    .btn_language_in{
+        top: 42px;
+    }
+    .slick-arrow{
+        display: none !important;
+    }
+
+    .slide_cont{
+        flex-direction: column;
+        left: 10px;
+    }
+    .main_slide_3{
+        background-image: url(../images/mobilde_main_banner3.jpg);
+    }
+    .tit_size{
+        font-size: 2.3334rem;
+    }
+    .middle_tit_size{
+        font-size: 1.2223rem;
     }
 }
