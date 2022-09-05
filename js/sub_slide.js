@@ -31,13 +31,13 @@ new Swiper('.s2_slider', {
 });
 
 new Swiper('.s4_slider', {
-	speed : 10000,
+	speed : 8000,
 	initialSlide: 0,
 	slidesPerView : 5,
 	spaceBetween : 100,
 	slidesPerGroup : 1,
 	freeMode: true,
-	loop: true,
+	// loop: true,
 	autoplay : {
 		delay: 0,
 	},

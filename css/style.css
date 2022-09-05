@@ -152,7 +152,7 @@ h2 > b{
 
 
 .nav{
-    width: 62%;
+    width: 63%;
 }
 .nav .gnb{
     justify-content: space-between;
@@ -629,7 +629,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 #section2 .swiper-slide .sub_slide_img{
     width:100%;
-    height: 250px;
+    height: 300px;
     background-image: url(../images/sub_slide1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -981,7 +981,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 #section7 .s7_art_wrap{
     padding: 0 25px;
     position: relative;
-    margin-bottom: 110px;
+    margin-bottom: 133px;
 }
 #section7 .s7_slider_txt{
     text-align: center;
@@ -989,7 +989,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 #section7 .s7_slider_frame{
     position: absolute;
-    top: -53px;
+    top: -83px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 600px;
@@ -1006,38 +1006,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     overflow: visible;
 }
 #section7 .swiper-slide{
-    width: 440px !important;
+    /* width: 440px !important;
     height: 250px;
-    position: relative;
+    position: relative; */
     /* margin-right: 130px; */
+    width: 440px !important;
+    height: 250px ;
 }
 #section7 .swiper-slide p{
     position: absolute;
-    top: -92px;
+    top: -122px;
     left: 0;
-    width: 100%;
     text-align: center;
     color: #212529;
     display: none;
 }
-#section7 .swiper-slide-next p{
+#section7 .swiper-slide-active p{
     display: block;
+    width: 101%;
+    
 }
-
-#section7 .swiper-slide:last-child{
-    margin-right: 0px;
-}
-#section7 .swiper-slide-next{
+#section7 .swiper-slide-active img{
         width: 540px !important;
-        height: 300px;
-}
-#section7 .swiper-wrapper{
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: -620px;
-    /* width: 440px !important; */
-    /* height: 450px; */
+        height: 300px !important;
+        transform: translate(-50px, -25px);
+        /* transform: scale(1.2); */
 }
 
 
@@ -1060,11 +1053,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     /* margin-left: auto; */
 }
 #footer .list{display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 0.5fr 0.5fr 1fr;
+    grid-template-columns: 1fr 0.9fr 0.6fr 0.5fr 1fr;
 
     grid-template-areas:
-        'area1 area1 area1 area3 area3'
+        'area1 area1 area3 area3 area3'
         'area2 area2 area2 area2 area5'
         'area4 area4 area4 area4 area5';
     /* grid-template-rows: 1fr 70px 1fr; */
@@ -1190,7 +1182,80 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 .popup_top_close{
     position: absolute;
-    top: 10px;
-    right:10px;
+    top: 0px;
+    right:0px;
     color: #fff;
+    background-color: rgba(12, 35, 64,0.5);
+    padding: 5px;
+}
+
+
+@media all and (max-width:1024px){
+    #header{
+        padding: 0 20px;
+    }
+    .inner{
+        padding: 0 20px;
+    }
+    .nav{
+        display: none;
+    }
+    .s3_tit{
+        margin-bottom: 50px;
+    }
+    .s3_art_wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+
+    }
+    .s3_art{
+        margin-bottom: 50px;
+    }
+    #section6 .inner{
+        display: block;
+    }
+    #section6 .s6_act{
+        margin-bottom: 100px;
+    }
+    #section6 .s6_act, #section6 .s6_news{
+        width: 100%;
+    }
+    #section6 .s6_act_art{
+        width: 48%;
+    }
+
+    #footer .list{display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        grid-template-areas:
+            'area1 area3'
+            'area2 area2'
+            'area5 area4';
+        /* grid-template-rows: 1fr 70px 1fr; */
+    }
+    #footer .ft_txt1{
+        line-height: 45px;
+    }
+    #footer .ft_inquiry_number{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #footer .ft_txt{
+        margin-bottom: 40px;
+    }
+    }
+    .ft_link_wrap{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #footer .box5{
+        padding-top: 0;
+    }
+    #footer .ft_link_wrap a:nth-child(1), #footer .ft_link_wrap a:nth-child(2){
+        margin-bottom: 30px;
+    }
 }
