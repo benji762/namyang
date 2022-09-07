@@ -32,6 +32,9 @@ b{
 h2 > b{
     font-weight: 700;
 }
+h2 > b > b{
+    font-weight: 700;
+}
 .tit_size{
     font-size: 3.4445rem;
     line-height: 1.2em;
@@ -1224,6 +1227,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     .s3_art{
         margin-bottom: 50px;
     }
+
     #section6 .inner{
         display: block;
     }
@@ -1269,10 +1273,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     #footer .ft_link_wrap a:nth-child(1), #footer .ft_link_wrap a:nth-child(2){
         margin-bottom: 30px;
     }
+
+
+
 @media all and (max-width:768px){
     b{
         display: inline;
     }
+    .mo_br{
+        display: block;
+    }
+    .text_none{
+        display: none;
+    }
+    
     #header{
         padding: 0 10px;
     }
@@ -1316,6 +1330,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     .main_slide_3{
         background-image: url(../images/mobilde_main_banner3.jpg);
     }
+    #section2 .s2_tit{
+        margin-bottom: 50px;
+    }
+    #section2 .tit_size{
+        font-size: 2.3334rem;
+    }
+
+    #section3 .tit_size{
+        font-size: 2.3334rem;
+    }
+
+    #section4 .s4_tit{
+        margin-bottom: 50px;
+    }
+    #section4 .tit_size{
+        font-size: 2.3334rem;
+    }
+    
     #section5{
         width: 100%;
         padding-top: 100px;
@@ -1325,7 +1357,141 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         background-size: cover;
         background-position: center;
     }
+    #section5 .middle_tit_size{
+        font-size: 2rem;
+    }    
+    #section5 .sub_tit_size{
+        font-size: 1rem;
+    }
     #section5 .s5_btn{
         margin-left: 0;
+    }
+    #section5 .s5_input_wrap{
+        width: 100%;
+    }
+    #section5 form > div{
+        justify-content: flex-start;
+    }
+    #name, #phone{
+        width: 210px;
+        margin-left: auto;
+    }
+    #inquiry{
+        width: 210px;
+        margin-left: auto;
+    }
+    #section6 .s6_tit{
+        margin-bottom: 50px;
+    }
+    #section6 .tit_size{
+        font-size: 2.3334rem;
+    }
+    #section6 .middle_tit_size{
+        font-size: 1.2223rem;
+    }
+    .mo_txt_size{
+        font-size: 0.7778rem;
+    }
+    #section6{
+        padding-bottom: 0;
+    }
+    #section6 .s6_act_art_wrap{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #section6 .s6_act_art{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #section6 .s6_act_art:last-child{
+        margin-bottom:0;
+    }
+    #section6 .s6_act_art_img{
+        margin-bottom: 20px;
+    }
+    #section6 .s6_news_art{
+        align-items: center;
+    }
+    #section6 .s6_news_art p{
+        margin-right: 10px;
+    }
+    #section7{
+        background-color: #fff;
+        padding-bottom: 100px;
+    }
+    #section7 .tit_size {
+        font-size: 2.3334rem;
+    }
+    #section7 .swiper-slide p{
+        top: -135px;
+    }
+    #footer{
+        padding: 30px 0;
+    }
+    #footer .list{display: grid;
+        grid-template-columns: 1fr;
+    
+        grid-template-areas:
+            'area1 '
+            'area2'
+            'area5'
+            'area3'
+            'area4';
+        /* grid-template-rows: 1fr 70px 1fr; */
+    }
+    #footer .ft_txt1{
+        font-size: 0.7778rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        line-height: 1em;
+    }
+    #footer .ft_txt2{
+        margin-bottom: 30px;
+    }
+    #footer .box3{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    #footer .btn_family_site{
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
+    #footer .ft_family_site{
+        margin: 0 auto;
+        width: 210px;
+    }
+    #footer .family_site{
+        width: 100%;
+        bottom: 48px;
+    }
+    #footer .ft_sns_wrap{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #footer .box5{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .ft_link_wrap{
+        justify-content: space-between;
+    }
+    #footer .ft_link_wrap a:nth-child(1), #footer .ft_link_wrap a:nth-child(2){
+        margin-bottom: 20px;
+    }
+    #footer .ft_link_wrap a{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #footer .ft_link_wrap a{
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+    }
+    #footer .ft_link_wrap a img{
+        margin-bottom: 10px;
     }
 }
