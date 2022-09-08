@@ -11,6 +11,7 @@ new Swiper('.s2_slider', {
 	slidesPerView : 3,
 	spaceBetween : 0,
 	slidesPerGroup : 1,
+	// centeredSlides: true,
 	// 스크롤바 설정하기
 	scrollbar : {
 		el : '.swiper-scrollbar',
