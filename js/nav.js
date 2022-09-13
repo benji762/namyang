@@ -25,7 +25,7 @@ $(function(){
 $('.btn_nav').click(function(){
   $('.btn_nav_click').animate({'right' : '0'})
   })
-
+ 
   $('.btn_nav.close').click(function(){
     if(window_size <= 1024){
       $('.btn_nav_click').animate({'right' : '-100%'})
