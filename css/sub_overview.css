@@ -3,8 +3,7 @@
     margin: 0 auto;
 }
 /* overview_title */
-#overview_title{
-}
+
 #overview_title .ovtit_bg{
     width: 100%;
     height: 100vh;
@@ -59,8 +58,7 @@
 }
 #section1 .s1_art{
     display: grid;
-    transition: 1.5s;
-
+    transition: 0.5s;
 }
 #section1 .s1_art .box1{grid-area: area1;}
 #section1 .s1_art .box2{grid-area: area2;}
@@ -73,70 +71,71 @@
 #section1 .s1_art.fir{
     position: absolute;
     top: 100px;
-    left: -1000px;
+    left: -200px;
     grid-template-areas:
     'area1'
     'area2';
     row-gap: 50px;
+    opacity: 0;
+
     transform: translate(0, 0);
 }
 
 
 #section1 .s1_art.fir.scroll{
-    transform: translate(1000px, 0);
-    animation: opacity 2s forwards;
-    
+    transform: translate(200px, 0);
+    opacity: 1;
+    transition: opacity 2s, transform 1.5s;
 }
 #section1 .s1_art.sec{
     position: absolute;
     top: 0px;
-    right: -1090px;
+    right: -290px;
     grid-template-areas:
     'area2'
     'area1';
     row-gap: 50px;
+    opacity: 0;
     transform: translate(0, 0);
-    
+
 }
 #section1 .s1_art.sec.scroll{
-    transform: translate(-1090px, 0);
-    animation: opacity 2s forwards;
+    transform: translate(-290px, 0);
+    opacity: 1;
+    transition: opacity 2s, transform 1.5s;
 }
 
 #section1 .s1_art.third{
     position: absolute;
-    top: 2200px;
+    top: 1300px;
     right: 0px;
+    opacity: 0;
 
     grid-template-areas:
     'area0 area2'
     'area1 area2';
     column-gap: 50px;
     transform: translate(0, 0);
+
 }
 
 #section1 .s1_art.third.scroll{
-    transform: translate(0px, -1100px);
-    animation: opacity 2s forwards;
+    transform: translate(0px, -200px);
+    opacity: 1;
+    transition: opacity 2s, transform 1.5s;
 }
 
 
 #section2.scroll{
     transform: translateY(0);
-    transition: 3s;
-    animation: opacity 5s forwards;
-    
+    opacity: 1;
+    transition: opacity 2s, transform 1.5s;
 }
 #section3.scroll{
     transform: translateY(0);
-    transition: 3s;
-    animation: opacity 5s forwards;
-}
-@keyframes opacity{
-    0%{
-        opacity: 0;
-    }
-    100%{opacity: 1;}
+    opacity: 1;
+    transition: opacity 2s, transform 1.5s;
+   
 }
 
 #section1 .s1_art.fir .art_img{
@@ -181,7 +180,9 @@
 
 #section2{
     margin-bottom:200px;
-    transform: translateY(1000px);
+    transform: translateY(200px);
+    opacity: 0;
+
 }
 #section2 .s2_tit_wrap{
     text-align: center;
@@ -276,7 +277,9 @@
 
 #section3{
     margin-bottom: 300px;
-    transform: translateY(1000px);
+    transform: translateY(200px);
+    opacity: 0;
+    padding: 0 10%;
 }
 #section3 .s3_tit_wrap{
     text-align: center;
@@ -294,9 +297,12 @@
 #section3 .s3_art{
     align-items: center;
 }
+#section3 .s3_art >p{
+    font-size: 1.5rem;
+}
 #section3 .s3_art_img{
-    width:170px;
-    height: 200px;
+    width:119px;
+    height: 140px;
     background: url(../images/ico_overview_esg_2021_01.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -368,6 +374,7 @@
         row-gap: 0;
         column-gap: 50px;
         transform: translate(0, 0);
+        opacity: 1;
     }
     #section1 .s1_art.fir .art_img{
         width: 450px;
@@ -378,7 +385,6 @@
   
     #section1 .s1_art.fir.scroll{
         transform: translate(0, 0);
-        animation: none;
     }
     #section1 .s1_art.sec{
         position: static;
@@ -389,6 +395,7 @@
         row-gap: 0;
         column-gap: 50px;
         transform: translate(0, 0);
+        opacity: 1;
     }
     #section1 .s1_art.sec .art_img{
         width: 450px;
@@ -397,7 +404,6 @@
     }
     #section1 .s1_art.sec.scroll{
         transform: translate(0, 0);
-        animation: none;
     }
     #section1 .s1_art.third{
         position: static;
@@ -408,6 +414,7 @@
         row-gap: 0;
         column-gap: 50px;
         transform: translate(0, 0);
+        opacity: 1;
     }
     #section1 .s1_art.third .art_img{
         width: 450px;
@@ -416,8 +423,15 @@
     }
     #section1 .s1_art.third.scroll{
         transform: translate(0, 0);
-        animation: none;
     }
+    #section2,#section3{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    #section2.scroll,#section3.scroll{
+        transition: 0;
+    }
+    
 }
 
 @media all and (max-width:1024px){
@@ -486,6 +500,7 @@
     }
     #section3{
         transform: translateY(0);
+        padding:0;
     }
     #section3.scroll{
         animation: none;
@@ -495,8 +510,7 @@
     display: grid;
     width: 100%;
     grid-template-areas:
-        'area1 area2'
-        'area3 area4' ;
+        'area1 area2 area3 area4' ;
         /* column-gap: 50px; */
         row-gap: 100px;
         place-content: space-evenly;
@@ -591,10 +605,8 @@
         display: grid;
         width: 100%;
         grid-template-areas:
-            'area1'
-            'area2' 
-            'area3'
-            'area4' ;
+            'area1 area2'
+            'area3 area4' ;
             /* column-gap: 50px; */
             row-gap: 100px;
             place-content: space-evenly;

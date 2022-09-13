@@ -427,6 +427,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 #section6 .s6_news_art:hover p{
     font-weight: 700;
 }
+#section6 .s6_news_art:hover p>b{
+    font-weight: 700;
+}
+
 /* section7 */
 #section7{
     padding-top: 100px;
@@ -456,7 +460,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     border: 8px solid #000;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0,0.2);
-    z-index: 9999;
+    z-index: 99;
     background: none;
     pointer-events : none;
     /* display: none; */
@@ -539,7 +543,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     background-color: rgba(12, 35, 64,0.5);
     padding: 5px;
 }
-
 
 @media all and (max-width:1024px){
     
