@@ -1,6 +1,7 @@
 .ov_inner{
     max-width: 1600px;
     margin: 0 auto;
+    padding: 0 80px;
 }
 /* overview_title */
 
@@ -591,6 +592,10 @@
     }
     #section2 .s2_cont_head::after{
         height: 150%;
+    }
+    #section2 .s2_cont_wrap::after{
+        top: 30px;
+     
     }
     #section3{
         transform: translateY(0);
