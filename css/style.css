@@ -259,6 +259,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     width: 100%;
     position: relative;
     transition: 0.3s;
+    filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.4));
 }
 #section4 .s4_art h4{
     position: absolute;
