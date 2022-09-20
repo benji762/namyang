@@ -881,6 +881,18 @@ font-size: 0px;
         display: block;
         animation: mo_show_nav 0.5s forwards;
     }
+    #footer .family_site{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #212529;
+    position: absolute;
+    bottom: 71px;
+    left: 0;
+    box-shadow: 0 0 1px 0 #374c66;
+    
+}
 @keyframes mo_show_nav{
     0%{ right: -100%;}
     100%{right: 0;}
@@ -908,7 +920,6 @@ font-size: 0px;
     #footer .ft_txt{
         margin-bottom: 40px;
     }
-    }
     .ft_link_wrap{
         flex-wrap: wrap;
         justify-content: space-between;
@@ -919,7 +930,11 @@ font-size: 0px;
     #footer .ft_link_wrap a:nth-child(1), #footer .ft_link_wrap a:nth-child(2){
         margin-bottom: 30px;
     }
+    #footer .family_site{
+        bottom: 95px;
 
+    }
+}
 
 
 @media all and (max-width:768px){

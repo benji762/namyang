@@ -1063,9 +1063,13 @@
       </div>
   </div>
   </footer>
-  <div class="popup">
-    <img class="popup_img" src="images/pop_1.jpg" alt="채용공고 팝업">
-      <button class="close popup_top_close sub_txt_size">닫기 X</button>
+
+  <div class="popup" id="popupDiv">
+    <img class="popup_img" src="images/pop_1.jpg" alt="채용공고 팝업" usemap="#image-map">
+      <map name="image-map">
+          <area target="_blank" alt="" title="" href="#" coords="170,514,33,488" shape="rect">
+        </map>
+      <button class="close popup_top_close"><span>닫기</span><span>닫기</span></button>
     <div class="popup_footer flex">
       <button class="today_close sub_txt_size">오늘 하루 열지 않음</button>
       <button class="close sub_txt_size">닫기 X</button>

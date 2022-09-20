@@ -538,11 +538,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 .popup_top_close{
     position: absolute;
-    top: 0px;
-    right:0px;
-    color: #fff;
-    background-color: rgba(12, 35, 64,0.5);
-    padding: 5px;
+    top: 15px;
+    right:10px;    
+}
+.popup_top_close span{
+    font-size: 0;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+}
+.popup_top_close span:nth-child(1){
+    transform: rotate(45deg) translate(2px, 0);
+}
+.popup_top_close span:nth-child(2){
+    transform: rotate(-45deg) translate(1px, 0);
 }
 @media all and (max-width:1024px){
     .s3_tit{
