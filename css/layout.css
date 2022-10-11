@@ -963,9 +963,7 @@ font-size: 0px;
     .inner{
         padding: 0 10px;
     }
-    .popup{
-        display:none;
-    }
+   
     #header{
         height: 60px;
     }

@@ -55,7 +55,7 @@ $(function(){
     $(document).ready(function(){
         var cookiedata = document.cookie;
         if(cookiedata.indexOf("close=Y")<0){
-            $("#popupDiv").show();
+            $("#popupDiv").addClass('show');
         }else{
             $("#popupDiv").hide();
         }

@@ -431,6 +431,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 #section6 .s6_news_art:hover p>b{
     font-weight: 700;
 }
+#section6 .s6_news_art span{
+    margin-left: 10%;
+}
 
 /* section7 */
 #section7{
@@ -524,6 +527,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     left: 100px;
     z-index: 999;
 }
+#popupDiv.show{
+    display: block;
+}
 .popup_footer{
     justify-content: end;
     background-color: #2a3e58;
@@ -534,17 +540,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     margin-right: 20px;
 }
 .popup_footer button.today_close{
-    margin-right: 30px;
+    margin-right: 20px;
 }
 .popup_top_close{
     position: absolute;
-    top: 15px;
-    right:10px;    
+    top: 20px;
+    right:20px;    
 }
 .popup_top_close span{
     font-size: 0;
     display: block;
-    width: 20px;
+    width: 30px;
     height: 2px;
     background-color: #fff;
 }
@@ -584,6 +590,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 
 @media all and (max-width:768px){
+    #popupDiv{
+        display: none;
+    }
     .mo_none{
         display: none;
     }
@@ -735,6 +744,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     }
     #section7 .tit_size {
         font-size: 2.3334rem;
+    }
+    #popupDiv.show{
+        display:none;
     }
 }
 }
